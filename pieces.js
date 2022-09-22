@@ -1,4 +1,4 @@
-import { ajoutListenersAvis, afficherAvis } from "./avis.js";
+import { ajoutListenersAvis, afficherAvis } from "/avis.js";
 
 // Récupération des pièces éventuellement stockées dans le localStorage
 let pieces = window.localStorage.getItem("pieces");
@@ -14,7 +14,7 @@ if (pieces === null) {
 } else {
 	pieces = JSON.parse(pieces);
 }
-
+console.log(pieces);
 // Fonction qui génère toute la page web
 function genererPieces(pieces) {
 
